@@ -1,0 +1,50 @@
+{
+	"schemaVersion": 1,
+	"id": "no-m",
+	"version": "${version}",
+	"name": "No M",
+	"description": "Welcome to my dark and twisted world.",
+	"authors": [
+		"The 64th Gamer"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/no-m/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "the64thgamer.no_m.NoM",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "the64thgamer.no_m.NoMDataGenerator",
+				"adapter": "kotlin"
+			}
+		],
+      "client": [
+        {
+          "value": "the64thgamer.no_m.NoMClient",
+          "adapter": "kotlin"
+        }
+      ]
+	},
+	"mixins": [
+		"no-m.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
