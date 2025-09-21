@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "GAG",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "no_m:gibbly"
+    },
+    "A": {
+      "item": "no_m:glangry"
+    }
+  },
+  "result": {
+    "item": "no_m:gibbly",
+    "count": 9
+  }
+}

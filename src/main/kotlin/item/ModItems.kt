@@ -1,7 +1,6 @@
 package item
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
-import net.fabricmc.fabric.mixin.item.ItemSettingsMixin
 import net.minecraft.item.Item
 import net.minecraft.item.ItemGroups
 import net.minecraft.registry.Registries
@@ -11,6 +10,7 @@ import the64thgamer.no_m.NoM
 
 object ModItems {
     val GIBBLY: Item = registerItem("gibbly", Item(Item.Settings()))
+    val GLANGRY: Item = registerItem("glangry", Item(Item.Settings()))
 
     private fun registerItem(name: String, item: Item): Item {
         return Registry.register(
@@ -25,6 +25,7 @@ object ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register { entries ->
             entries.add(GIBBLY)
+            entries.add(GLANGRY)
         }
     }
 }

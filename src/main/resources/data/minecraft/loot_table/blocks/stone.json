@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": ["minecraft:feather"]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "no_m:pecked_stone_block",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": ["minecraft:wooden_pickaxe"]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobblestone",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": ["minecraft:stone_pickaxe"]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "no_m:pulverized_stone_block",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": ["minecraft:iron_pickaxe", "minecraft:golden_pickaxe"]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gravel",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": ["minecraft:diamond_pickaxe", "minecraft:netherite_pickaxe"]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

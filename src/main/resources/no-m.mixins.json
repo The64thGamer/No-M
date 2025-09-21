@@ -3,7 +3,9 @@
 	"package": "the64thgamer.no_m.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+      "NoMModEvents",
+      "MixinCreeperEntity",
+      "PitchBlackLighting"
 	],
 	"injectors": {
 		"defaultRequire": 1
